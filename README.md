@@ -6,6 +6,7 @@ This is a hands-on project based on AWS tutorials to build a fullstack React app
 
 1. **AWS SSO and CLI**
    - Configure an SSO session and AWS profile for Amplify. Create a profile (e.g., `profile-name`) and note the `sso_start_url`, `sso_account_id`, `sso_role_name`:
+     
      ```bash
      aws configure sso
      ```
@@ -42,4 +43,4 @@ This is a hands-on project based on AWS tutorials to build a fullstack React app
 
 - SSO tokens expire after a certain period (usually 1-12 hours), so you need to log in again periodically:
   ```bash
-  aws sso login --profile nico-admin
+  aws sso login --profile profile-name
